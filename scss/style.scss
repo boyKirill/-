@@ -1,0 +1,54 @@
+@import "nullstyle.scss";
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+	
+}
+
+.header {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:tan;
+	font-size: 20px;
+}
+
+.chat {
+	display: flex;
+	justify-content: space-between;
+		
+	&__users-list {
+			min-width: 200px;
+			background-color: royalblue;
+			overflow-y: scroll;
+			max-height: 603.5px;
+			padding: 10px 0 0 20px;
+			li{
+				padding: 2px 0;
+			}
+		}
+
+		&__body {
+			background-color: saddlebrown;
+			font-size: 14px;
+			overflow-y: scroll;
+			max-height: 603.5px;
+			padding: 30px 20px 10px 40px;
+		}
+}
+.footer {
+	font-size: 20px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: sienna;
+}
